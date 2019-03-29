@@ -1,0 +1,73 @@
+body {
+  /* Remove user agent (browser) stylesheet styling */
+  background-color: black;
+  color: rgb(86, 203, 240);
+  line height: 1.5;
+  font-size: 15px;
+  text-align: center;
+  padding: 30px;
+  margin: auto;
+  height: 500px;
+  width: 1100px;
+}
+
+header {
+  padding: 30px 0 60px 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  text-decoration: overline;
+}
+
+a:hover {
+  color: rgb(19, 227, 227);
+}
+
+section {
+  /* Floating elements sit next to each other on one line as far as there is room. Float: left; makes elements sit next to each other starting on the left. We can also use float: right;  */
+  float: left;
+  /* We set a width of 50% to split the screen into two columns */
+  width: 50%;
+  height: 500px;
+  margin: 30px;
+}
+
+/* This styles up elements in html with a class of .big-image */
+.big-image {
+  /* This stretches the background images to cover the sections */
+  background-size: cover;
+}
+
+/* These add different background images to the sections with id attributes */
+#topic-one {
+  background-image: url('../images/carve/football 1.jpg');
+}
+
+#topic-two {
+  background-image: url('../images/carve/football 2.jpg');
+}
+
+#topic-three {
+  background-image: url('../images/carve/football 3.jpg');
+}
+
+div {
+  /* This moves the topic content vertically down inside the sections with text. To adjust position, increase or decrease the percentage*/
+  transform: translateY(70%);
+}
+
+form {
+  /* This fixes the floated layout and allows us to add height to the form */
+  clear: left;
+}
+
+header {
+  font-style: italic;
+}
